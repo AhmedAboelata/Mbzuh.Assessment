@@ -1,0 +1,12 @@
+﻿global using System.ComponentModel;
+global using AutoMapper;
+global using FluentValidation;
+global using Mbzuh.Assessment.BookService.Application.Common.Exceptions;
+global using Mbzuh.Assessment.BookService.Application.Common.Extensions;
+global using Mbzuh.Assessment.BookService.Application.Common.Shared.Dtos.Response;
+global using Mbzuh.Assessment.BookService.Application.Common.Shared.Services;
+global using Mbzuh.Assessment.BookService.Domain.Constants;
+global using Mbzuh.Assessment.BookService.Domain.Entities;
+global using Mbzuh.Assessment.BookService.Infrastructure.Persistence.DataContext;
+global using MediatR;
+global using Microsoft.EntityFrameworkCore;

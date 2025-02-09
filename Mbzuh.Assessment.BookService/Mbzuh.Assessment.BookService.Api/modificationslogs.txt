@@ -1,0 +1,120 @@
+2/9/2025 2:25:02 PM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "bd65349d-6533-4154-a7eb-08dd488df4ce",
+  "Title": "bbb",
+  "Author": "bbb",
+  "ISBN": "5555555555",
+  "PublicationYear": 2000,
+  "GenreId": 20,
+  "Genre": {
+    "Id": 20,
+    "Name": "Mystery",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 2:29:13 PM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "2a4b397e-36d0-45fb-255a-08dd488ff84d",
+  "Title": "Ranrona",
+  "Author": "Ranrona",
+  "ISBN": "121212121212",
+  "PublicationYear": 5500,
+  "GenreId": 21,
+  "Genre": {
+    "Id": 21,
+    "Name": "Narrative",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 2:36:16 PM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "04eaece9-bbf7-418e-0f6e-08dd4890f642",
+  "Title": "Love",
+  "Author": "Rana",
+  "ISBN": "1234567890",
+  "PublicationYear": 2005,
+  "GenreId": 27,
+  "Genre": {
+    "Id": 27,
+    "Name": "Novel",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 2:44:42 AM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "30cf8b42-7cd4-47e9-b654-fdffc4f1a9f8",
+  "Title": "BAA",
+  "Author": "BAA",
+  "ISBN": "222222222222",
+  "PublicationYear": 2344,
+  "GenreId": 3,
+  "Genre": {
+    "Id": 3,
+    "Name": "Mystery",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 2:47:49 AM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "4fda35c6-9f2c-4618-a7d9-ca4c954da78f",
+  "Title": "CCC",
+  "Author": "AAACCC",
+  "ISBN": "1234567890",
+  "PublicationYear": 2000,
+  "GenreId": 2,
+  "Genre": {
+    "Id": 2,
+    "Name": "Gen2",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 2:53:19 AM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "5f25a648-7b8c-4fb0-ca57-08dd4892d87c",
+  "Title": "AAA",
+  "Author": "Leo Tolstoy",
+  "ISBN": "9780147632218",
+  "PublicationYear": 2000,
+  "GenreId": 31,
+  "Genre": {
+    "Id": 31,
+    "Name": "Narrative",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 12:18:31 PM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "b94443a7-3ff0-4387-4f06-08dd48e103ae",
+  "Title": "aaaaww",
+  "Author": "aaaaww",
+  "ISBN": "12345678900",
+  "PublicationYear": 3456,
+  "GenreId": 1,
+  "Genre": {
+    "Id": 1,
+    "Name": "Fiction",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------
+2/9/2025 3:57:02 PM >> Mbzuh.Assessment.BookService.Domain.Entities.Book >> Modified
+{
+  "Id": "8c5785da-3b58-45df-be87-c96fb06c93af",
+  "Title": "Atest",
+  "Author": "Btest",
+  "ISBN": "12345678990",
+  "PublicationYear": 2000,
+  "GenreId": 3,
+  "Genre": {
+    "Id": 3,
+    "Name": "Mystery",
+    "Books": []
+  }
+}
+---------------------------------------------------------------------

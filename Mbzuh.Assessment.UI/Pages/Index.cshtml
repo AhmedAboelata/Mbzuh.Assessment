@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Books List";
+}
+
+<h2>Books List</h2>
+
+<div class="input-group">
+    @Html.TextBox("searchText", "", new { @class = "form-control", placeholder = "Search by Title or Author or Genre (Contains) / While search by Publication Year or ISBN (Exact)" })
+    <button class="btn btn-primary" onclick="ReloadGrid()">Search</button>
+</div>
+<hr />
+
+<!-- Add Book Button -->
+<button class="btn btn-primary" onclick="openCreateModal()">Add Book</button>
+<hr />
+
+<!-- Books Table -->
+<table class="table table-bordered mt-3" id="tblBooks">
+    <thead>
+        <tr>
+            <th hidden="hidden" style="display: none;">Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Publication Year</th>
+            <th>Genre</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<!-- Create & Edit Modal -->
+<div id="bookModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Manage Book</h4>
+                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                @Html.Hidden("bookId")
+                <div class="form-group">
+                    <label>Title</label>
+                    @Html.TextBox("title", "", new { @class = "form-control", @maxlength = "200" })
+                </div>
+                <div class="form-group">
+                    <label>Author</label>
+                    @Html.TextBox("author", "", new { @class = "form-control", @maxlength = "200" })
+                </div>
+                <div class="form-group">
+                    <label>ISBN</label>
+                    @Html.TextBox("isbn", "", new { @class = "form-control", @maxlength = "13" })
+                </div>
+                <div class="form-group">
+                    <label>Publication Year</label>
+                    @Html.TextBox("publicationYear", "", new { @class = "form-control", type = "number" })
+                </div>
+                <div class="form-group">
+                    <label>Genre</label>
+                    <select id="genre" class="form-control"></select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="saveBook()">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/index.js"></script>

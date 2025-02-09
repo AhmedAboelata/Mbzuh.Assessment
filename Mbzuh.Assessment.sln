@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mbzuh.Assessment.UI", "Mbzuh.Assessment.UI\Mbzuh.Assessment.UI.csproj", "{5563DED2-9E27-47BC-8647-55B7947EC6DB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63461B92-00CA-42B9-8519-FB2439122640} = {63461B92-00CA-42B9-8519-FB2439122640}
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D} = {7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}
+		{9F60D996-AA20-4605-B726-49B5356DBF36} = {9F60D996-AA20-4605-B726-49B5356DBF36}
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE} = {DDD15D44-743B-4B2B-863A-29BA2A5B52BE}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mbzuh.Assessment.BookService", "Mbzuh.Assessment.BookService", "{36226B55-D03C-47F4-96E7-AA343662E429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mbzuh.Assessment.BookService.Api", "Mbzuh.Assessment.BookService\Mbzuh.Assessment.BookService.API\Mbzuh.Assessment.BookService.Api.csproj", "{9F60D996-AA20-4605-B726-49B5356DBF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mbzuh.Assessment.BookService.Domain", "Mbzuh.Assessment.BookService\Mbzuh.Assessment.BookService.Domain\Mbzuh.Assessment.BookService.Domain.csproj", "{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mbzuh.Assessment.BookService.Infrastructure", "Mbzuh.Assessment.BookService\Mbzuh.Assessment.BookService.Infrastructure\Mbzuh.Assessment.BookService.Infrastructure.csproj", "{63461B92-00CA-42B9-8519-FB2439122640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mbzuh.Assessment.BookService.Application", "Mbzuh.Assessment.BookService\Mbzuh.Assessment.BookService.Application\Mbzuh.Assessment.BookService.Application.csproj", "{DDD15D44-743B-4B2B-863A-29BA2A5B52BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5563DED2-9E27-47BC-8647-55B7947EC6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5563DED2-9E27-47BC-8647-55B7947EC6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5563DED2-9E27-47BC-8647-55B7947EC6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5563DED2-9E27-47BC-8647-55B7947EC6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F60D996-AA20-4605-B726-49B5356DBF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F60D996-AA20-4605-B726-49B5356DBF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F60D996-AA20-4605-B726-49B5356DBF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F60D996-AA20-4605-B726-49B5356DBF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63461B92-00CA-42B9-8519-FB2439122640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63461B92-00CA-42B9-8519-FB2439122640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63461B92-00CA-42B9-8519-FB2439122640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63461B92-00CA-42B9-8519-FB2439122640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F60D996-AA20-4605-B726-49B5356DBF36} = {36226B55-D03C-47F4-96E7-AA343662E429}
+		{7DB3C484-7DEB-4F5E-993C-BFC60AE37F3D} = {36226B55-D03C-47F4-96E7-AA343662E429}
+		{63461B92-00CA-42B9-8519-FB2439122640} = {36226B55-D03C-47F4-96E7-AA343662E429}
+		{DDD15D44-743B-4B2B-863A-29BA2A5B52BE} = {36226B55-D03C-47F4-96E7-AA343662E429}
+	EndGlobalSection
+EndGlobal
