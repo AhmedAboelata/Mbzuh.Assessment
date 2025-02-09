@@ -3,12 +3,12 @@
 A robust API/UI solution built with **.NET 8** to manage books crud operations.
 
 ## Technologies
-	- **NET 8**
-	- **Entity Framework Core**
-	- **SQL Server** / **In-Memory Database**
-	- **Fluent Validation**
-	- **Auto Mapper**
-	- **JQeury**
+  - **NET 8**
+  - **Entity Framework Core**
+  - **SQL Server** / **In-Memory Database**
+  - **Fluent Validation**
+  - **Auto Mapper**
+  - **JQeury**
 
 ## Features
 	- Ability to configure the app to use either sql server database or in-memory database.
