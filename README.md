@@ -50,10 +50,10 @@ A robust API/UI solution built with **.NET 8** to manage books crud operations.
 		But if you prefer to make thos field strings and validate their datatype in the fluent validation that's easy.
 	
 ## Service Layer Notes
-  - Many codes (Specially in project Application folder "Common") can be moved to a shared project, which can be helpful if we have more than one service, But as we have only single service and for easy readability I let them there.
+  - Many codes (Specially in project **Application** folder **Common**) can be moved to a shared project, which can be helpful if we have more than one service, But as we have only single service and for easy readability I let them there.
   - Logging
-    - Logging is stored in txt file called "modificationslogs.txt" exists in the API project root.
-	- As per requested, Logging is working while updating book only (Easy to enable it globally or for some specific other transactions).
+    - Logging is stored in txt file called **modificationslogs.txt** exists in the API project root.
+	- As per requested, Logging is working while updating books only (Easy to enable it globally or for some specific other transactions).
 	- Practically in the real life, If we will use files for logging, It should generate file daily (at max), I just let it be txt single txt file for your easy readability.
 	
 ## UI Notes
