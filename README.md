@@ -17,8 +17,8 @@ A robust API/UI solution built with **.NET 8** to manage books crud operations.
   - Swagger APIs to Create/Update/Delete (Hard)/GetById/Get(Filtered And Paged) books.
   - UI page to List/Search/Paginate/Create/Update/Delete books (For Genre you can use swagger to add).
   - Inputs spaces sanitization
-    - Trimming(Remove start and trailing spaces).
-	- Remove extra spaces (Ex: 'Book      Name' will be sanitized to 'Book Name').
+    - Trimming (Remove start and trailing spaces).
+    - Remove extra spaces in the middle of a string value.
   - Inputs validations (Listed below).
   - Bussiness validations (Listed below).
   - Log any book successfull update trasnaction into a txt file (Called "modificationslogs.txt" exists in the API project root).
@@ -39,7 +39,7 @@ A robust API/UI solution built with **.NET 8** to manage books crud operations.
   - Genre
 	- Not to duplicate genre names.
   - Book
-	- Not to duplicate all book together.
+	- Not to duplicate all book fields together (The 5 data fields to be unique).
 	
 ## Database Notes
   - Intentioned to make the PK of Genre table int while PK of Book table Guid.
@@ -62,14 +62,14 @@ A robust API/UI solution built with **.NET 8** to manage books crud operations.
   - I kept the apis base url static here just for readability (It's easy to move it to appsettings).
   - Validated ISBN length, While intentioned to skip validating its format (only numbers), It still will return a validation message as per the backend fluent validations (Intentioned to skip it, just to hightlight that even any UI validation forgotten, backend validation still there).
   - Of course that js file can be enhanced and some codes can be centralized into helper files, Just let it here for easy readability, Also that's why I didn't minified it.
-  - Used the default browser alerts and confrimation boxes
+  - Used the default browser alerts and confirmation boxes (Which can be enhanced to swal or whatever).
 
 ## Out of scope
   - Authentication and authorization.
   - Localization.
   - API gateway (Upstreaming and downstreaming).
   - Unit testing.
-  - Sorting.
+  - Data Sorting.
 
 ## How to Run  
 1. Clone the repository from https://github.com/AhmedAboelata/Mbzuh.Assessment
@@ -77,6 +77,6 @@ A robust API/UI solution built with **.NET 8** to manage books crud operations.
 3. Open the appsetting.json file of the API project
 4. In the appsetting.json, Set the value of **UseInMemoryDatabase** to **true** (already defaulted) if you want the solution to use In-Memory database, while set it to **false** If you want it to use SQL database, And in that case please set you valid sql instance connection string in key **ConnectionStrings:DefaultConnection** in the same file.
 5. In the appsetting.json, Set the value of **SeedDataOnStart** to **true** (already defaulted) if you want to seed some data on start. otherwise set it **false**. To check the data that will be seeded look at class **Mbzuh.Assessment.BookService.Infrastructure.Persistence.DataContext.ApplicationDbContextDataSeeding.cs**
-6. **Run**, 2 console pages will open (default of .NET 8) and **2 web pages will be appears (Swagger, and UI books listing page)**.
-7. Restassured that the **database creation and seeding will be automatically executed** in the first run.
+6. **Run**, 2 console pages will open (default behaviour of .NET 8) and **2 web pages will be appears (Swagger, and UI books listing page)**.
+7. Restassured that the **sql database creation and seeding will be automatically executed** during the first run (If you configured the app to use).
 8. Sometimes with the first run, the UI listing books data not loading due to API project still not up and running, Just refresh the page or press button search (In real life deployments API projects will be up and running before UI projects).
